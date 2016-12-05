@@ -1,7 +1,8 @@
 # CodeWithUs #
+CodeWithUs is a collaborative real-time code editing environment.
 
-## Overview ##
-CodeWithUs is a collaborative real-time code editing environment. This project was created for my Hack Reactor MVP.
+## Summary ##
+This project was created for my Hack Reactor MVP.
 
 ## Features ##
 ### MVP ###
@@ -31,3 +32,7 @@ CodeWithUs is a collaborative real-time code editing environment. This project w
 - [Feathers.js](http://feathersjs.com/)
 - [mongoDB](https://www.mongodb.com/)
 - [mongoose](http://mongoosejs.com/)
+
+## Getting Started ##
+
+``npm install && npm start``
