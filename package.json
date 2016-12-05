@@ -1,0 +1,19 @@
+{
+  "name": "codewithus",
+  "version": "0.1.0",
+  "description": "CodeWithUs is a collaborative real-time code editing environment.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikelduffy/codewithus.git"
+  },
+  "author": "Mikel Duffy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikelduffy/codewithus/issues"
+  },
+  "homepage": "https://github.com/mikelduffy/codewithus#readme"
+}
