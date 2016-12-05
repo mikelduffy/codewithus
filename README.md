@@ -10,7 +10,7 @@ CodeWithUs is a collaborative real-time code editing environment. This project w
 - Multiple files/folders
 - Multiple users can work on separate files
 
-### Maybe ###
+### If Time Allows ###
 - Upload your files
 - Display cursors of users with their name
 - Code runner
