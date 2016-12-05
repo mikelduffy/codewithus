@@ -34,5 +34,4 @@ This project was created for my Hack Reactor MVP.
 - [mongoose](http://mongoosejs.com/)
 
 ## Getting Started ##
-
-``npm install && npm start``
+Install MongoDB globally with ``brew install mongo`` and run it with ``{fill this in later}`` then run the application with ``npm install && npm start`` and enjoy!

@@ -1,0 +1,19 @@
+{
+  "host": "codewithus-app.feathersjs.com",
+  "port": 80,
+  "mongodb": "DATABASE_URL",
+  "public": "../public/dist/",
+  "auth": {
+    "token": {
+      "secret": "FEATHERS_AUTH_SECRET"
+    },
+    "local": {},
+    "github": {
+      "clientID": "GITHUB_CLIENT_ID",
+      "clientSecret": "GITHUB_CLIENT_SECRET",
+      "permissions": {
+        "scope": []
+      }
+    }
+  }
+}

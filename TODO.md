@@ -19,3 +19,5 @@
 - Mongo models
   - folders
   - files
+  - users
+    - update profile picture from github
