@@ -1,19 +1,13 @@
 {
   "host": "localhost",
   "port": 3030,
-  "mongodb": "DATABASE_URL",
+  "mongodb": "mongodb://localhost:27017/codewithus",
   "public": "../public/",
   "auth": {
     "token": {
-      "secret": "FEATHERS_AUTH_SECRET"
+      "secret": "B2c4mu02EaTGpQDFf+xvrRccpEyGSQNoOi9Eyut4hRvyJKvUOCL05+Y9FAl/JfrQTSsLZiGlf5ES2wbHpYPVMw=="
     },
     "local": {},
-    "github": {
-      "clientID": "GITHUB_CLIENT_ID",
-      "clientSecret": "GITHUB_CLIENT_SECRET",
-      "permissions": {
-        "scope": []
-      }
-    }
+    "successRedirect": "/editor.html"
   }
 }

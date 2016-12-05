@@ -20,6 +20,7 @@
     "test": "npm run jshint && npm run mocha",
     "jshint": "jshint src/. test/. --config",
     "start": "node src/",
+    "start-prod": "NODE_ENV=production node src/",
     "mocha": "mocha test/ --recursive"
   },
   "dependencies": {
@@ -36,8 +37,6 @@
     "feathers-socketio": "^1.4.2",
     "mongoose": "^4.7.1",
     "passport": "^0.3.2",
-    "passport-github": "^1.1.0",
-    "passport-github-token": "^2.1.0",
     "serve-favicon": "^2.3.2",
     "winston": "^2.3.0"
   },

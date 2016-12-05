@@ -34,4 +34,5 @@ This project was created for my Hack Reactor MVP.
 - [mongoose](http://mongoosejs.com/)
 
 ## Getting Started ##
-Install MongoDB globally with ``brew install mongo`` and run it with ``{fill this in later}`` then run the application with ``npm install && npm start`` and enjoy!
+Install MongoDB globally with ``brew install mongo`` and run it with ``mongod --dbpath ./data --syslog --fork``.
+Clone the app with ``git clone https://github.com/mikelduffy/hrsf50-mvp.git`` then run the application with ``npm install && npm start`` and enjoy!
