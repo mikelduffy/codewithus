@@ -22,6 +22,7 @@ CodeWithUs is a collaborative real-time code editing environment. This project w
 - [Feathers.js](http://feathersjs.com/)
 - [Socket.io](http://socket.io/)
 - [React](https://facebook.github.io/react/)
+- [React-Materialize](https://github.com/react-materialize/react-materialize)
 - [CodeMirror](https://github.com/codemirror/codemirror)
 - [React-CodeMirror](https://github.com/JedWatson/react-codemirror)
 

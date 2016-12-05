@@ -1,19 +1,49 @@
 {
   "name": "codewithus",
-  "version": "0.1.0",
   "description": "CodeWithUs is a collaborative real-time code editing environment.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mikelduffy/codewithus.git"
-  },
-  "author": "Mikel Duffy",
+  "version": "0.1.0",
+  "homepage": "https://github.com/mikelduffy/codewithus",
+  "main": "src/",
+  "keywords": [
+    "feathers",
+    "react",
+    "mongoose"
+  ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mikelduffy/codewithus/issues"
+  "repository": "https://github.com/mikelduffy/codewithus",
+  "author": "Mikel Duffy",
+  "bugs": "https://github.com/mikelduffy/codewithus/issues",
+  "engines": {
+    "node": ">= 0.12.0"
   },
-  "homepage": "https://github.com/mikelduffy/codewithus#readme"
+  "scripts": {
+    "test": "npm run jshint && npm run mocha",
+    "jshint": "jshint src/. test/. --config",
+    "start": "node src/",
+    "mocha": "mocha test/ --recursive"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "compression": "^1.6.2",
+    "cors": "^2.8.1",
+    "feathers": "^2.0.2",
+    "feathers-authentication": "^0.7.12",
+    "feathers-configuration": "^0.3.3",
+    "feathers-errors": "^2.5.0",
+    "feathers-hooks": "^1.7.0",
+    "feathers-mongoose": "^3.6.1",
+    "feathers-rest": "^1.5.2",
+    "feathers-socketio": "^1.4.2",
+    "mongoose": "^4.7.1",
+    "passport": "^0.3.2",
+    "passport-github": "^1.1.0",
+    "passport-github-token": "^2.1.0",
+    "serve-favicon": "^2.3.2",
+    "winston": "^2.3.0"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.4",
+    "mocha": "^3.2.0",
+    "request": "^2.79.0"
+  }
 }
