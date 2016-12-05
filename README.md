@@ -4,14 +4,28 @@
 CodeWithUs is a collaborative real-time code editing environment. This project was created for my Hack Reactor MVP.
 
 ## Features ##
+### MVP ###
 - Multiple users can edit the same file
 - Syntax highlighting
-- Multiple files
-- Display cursors of users with their name (maybe)
-- Multiple users can work on separate files (maybe)
-- Code runner (maybe)
-- Light/Dark theme (maybe)
+- Multiple files/folders
+
+### Maybe ###
+- Display cursors of users with their name
+- Multiple users can work on separate files
+- Code runner
+- Light/Dark theme
+- Logging user edits
 
 ## Technologies ##
-Front-end: feathers.js, socket.io, React
-Back-end: node.js, feathers.js, nedb
+### Front-end ###
+- [Feathers.js](http://feathersjs.com/)
+- [Socket.io](http://socket.io/)
+- [React](https://facebook.github.io/react/)
+- [CodeMirror](https://github.com/codemirror/codemirror)
+- [React-CodeMirror](https://github.com/JedWatson/react-codemirror)
+
+### Back-end ###
+- [Node.js](https://nodejs.org/en/)
+- [Feathers.js](http://feathersjs.com/)
+- [mongoDB](https://www.mongodb.com/)
+- [mongoose](http://mongoosejs.com/)
