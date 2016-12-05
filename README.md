@@ -1,7 +1,7 @@
 # CodeWithMe #
 
 ## Overview ##
-CodeWithUs is a collaborative real-time code editing enviornment.
+CodeWithUs is a collaborative real-time code editing environment. This project was created for my Hack Reactor MVP.
 
 ## Features ##
 - Multiple users can edit the same file
