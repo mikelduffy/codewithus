@@ -5,7 +5,7 @@ const NewFileModal = (props) => {
   return (
     <Modal show={props.showNewFileModal} onHide={props.onModalClose}>
       <Modal.Header closeButton>
-        <Modal.Title>Enter File Name</Modal.Title>
+        <Modal.Title>Create a new file</Modal.Title>
       </Modal.Header>
       <Modal.Body>
 
@@ -14,7 +14,7 @@ const NewFileModal = (props) => {
         <FormControl
           type="text"
           value={props.newFileName}
-          placeholder="Enter file name"
+          placeholder="Enter a file name"
           onChange={props.onNewFileInput}
         />
       </form>

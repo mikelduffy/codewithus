@@ -1,9 +1,12 @@
 import React, {Component} from 'react';
 import { render } from 'react-dom';
 import CodeWithUs from './containers/codewithus.js';
-require('codemirror/mode/javascript/javascript');
-require('codemirror/mode/markdown/markdown');
 require('./styles.scss');
+require('codemirror/mode/javascript/javascript');
+require('codemirror/mode/jsx/jsx');
+require('codemirror/mode/htmlmixed/htmlmixed');
+require('codemirror/mode/markdown/markdown');
+require('codemirror/mode/css/css');
 
 if (module.hot) {
   module.hot.accept();
