@@ -65,21 +65,18 @@ class CodeWithUs extends Component {
     });
 
     this.fileService.on('created', file => {
-      console.log('New file created:', file);
-      // this.setState({
-      //   files: this.state.files.concat(message)
-      // });
+      this.setState({
+        files: this.state.files.concat(message)
+      });
     });
 
-    this.fileService.on('update', file => {
-      console.log('File updated:', file);
-      // if (file.name === this.state.currentFileTitle) {
-      //   this.setState({
-      //     currentFileContent: file.text
-      //   });
-      // }
+    this.fileService.on('patched', file => {
+      if (file._id === this.state.currentFileId) {
+        this.setState({
+          currentFileContent: file.text
+        });
+      }
     });
-
   }
 
   render(){
