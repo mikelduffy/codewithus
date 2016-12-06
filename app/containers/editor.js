@@ -25,7 +25,7 @@ class Editor extends Component {
 Editor.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
-  onContentUpdate: PropTypes.function.isRequired
+  onContentUpdate: PropTypes.func.isRequired
 };
 
 export default Editor;

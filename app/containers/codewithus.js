@@ -4,6 +4,7 @@ import app from '../index.js';
 // import UserList from './userlist.js';
 import FileNavigator from './filenavigator.js';
 import Editor from './editor.js';
+import {Grid, Row, Col} from 'react-bootstrap';
 
 class CodeWithUs extends Component {
   constructor(props){
@@ -27,6 +28,19 @@ class CodeWithUs extends Component {
         {text: newContent}
       );
     };
+
+    this.handleFileClick = (clickedFile) => {
+      const file = this.state.files.filter((file) => clickedFile._id === file._id)[0];
+      this.setState({
+        currentFileId: file._id,
+        currentFileTitle: file.name,
+        currentFileContent: file.text
+      });
+    }
+
+    this.handleNewFile = (name) => {
+
+    }
   };
 
   componentDidMount() {
@@ -65,18 +79,24 @@ class CodeWithUs extends Component {
 
   render(){
     return (
-      <div>
-        <FileNavigator
-          files={this.state.files}
-          users={this.state.users}
-          currentFileId={this.state.currentFileId}
-          />
-        <Editor
-          title={this.state.currentFileTitle}
-          content={this.state.currentFileContent}
-          onContentUpdate={this.handleContentUpdate}
-          />
-      </div>
+      <Grid>
+        <Col xs={2}>
+          <FileNavigator
+            onNewFile={this.handleNewFile}
+            onFileClick={this.handleFileClick}
+            files={this.state.files}
+            users={this.state.users}
+            currentFileId={this.state.currentFileId}
+            />
+        </Col>
+        <Col xs={10}>
+          <Editor
+            title={this.state.currentFileTitle}
+            content={this.state.currentFileContent}
+            onContentUpdate={this.handleContentUpdate}
+            />
+        </Col>
+      </Grid>
     )
   }
 };
