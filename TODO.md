@@ -1,15 +1,10 @@
 # TODO #
 
 ## Front-end ##
-- Routes
-  - Login
-  - Signup
-  - Editor
-- Login component (just use static html)
++ Login component (just use static html)
 - Header component
-- Settings component
 - Current user list component
-- File navigator component
++ File navigator component
 + Editor component
 
 ## Back-end ##
