@@ -9,6 +9,8 @@ class Editor extends Component {
   render() {
     const options = {
       lineNumbers: true,
+      tabSize: 2,
+      lineWrapping: true
     };
     return (
       <CodeMirror
