@@ -2,12 +2,12 @@
   "host": "localhost",
   "port": 3030,
   "mongodb": "mongodb://localhost:27017/codewithus",
-  "public": "../public/",
+  "public": "../app/",
   "auth": {
     "token": {
       "secret": "B2c4mu02EaTGpQDFf+xvrRccpEyGSQNoOi9Eyut4hRvyJKvUOCL05+Y9FAl/JfrQTSsLZiGlf5ES2wbHpYPVMw=="
     },
     "local": {},
-    "successRedirect": "/editor.html"
+    "successRedirect": "/"
   }
 }
