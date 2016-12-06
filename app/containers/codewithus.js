@@ -22,11 +22,6 @@ class CodeWithUs extends Component {
     this.fileService = app.service('files');
 
     this.handleContentUpdate = (newContent) => {
-
-      this.setState({
-        currentFileContent: newContent,
-      });
-
       this.fileService.patch(
         this.state.currentFileId,
         {text: newContent}
@@ -50,7 +45,7 @@ class CodeWithUs extends Component {
 
     this.fileService.on('created', file => {
       this.setState({
-        files: this.state.files.concat(message)
+        files: this.state.files.concat(file)
       });
     });
 
@@ -60,6 +55,11 @@ class CodeWithUs extends Component {
           currentFileContent: file.text
         });
       }
+      this.setState({
+        files: this.state.files.map((existingFile) => {
+          return file._id === existingFile._id ? file : existingFile;
+        })
+      });
     });
   }
 
