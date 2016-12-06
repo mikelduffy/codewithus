@@ -1,25 +1,31 @@
-import React, {Component} from 'react';
+import React, {Component, PropTypes} from 'react';
 import CodeMirror from 'react-codemirror';
 
 class Editor extends Component {
   constructor(props){
     super(props);
-  };
-
-  render() {
-    const options = {
+    this.options = {
       lineNumbers: true,
       tabSize: 2,
       lineWrapping: true
     };
+  };
+
+  render() {
     return (
       <CodeMirror
         value={this.props.content}
         onChange={this.props.onContentUpdate}
-        options={options}
+        options={this.options}
         />
     )
   };
+};
+
+Editor.propTypes = {
+  title: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
+  onContentUpdate: PropTypes.function.isRequired
 };
 
 export default Editor;
