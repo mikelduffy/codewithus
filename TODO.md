@@ -10,14 +10,14 @@
 - Settings component
 - Current user list component
 - File navigator component
-- Editor component (codemirror-react)
++ Editor component
 
 ## Back-end ##
-- Feathers services
-  - folders
-  - files
-- Mongo models
-  - folders
-  - files
-  - users
-    - update profile picture from github
++ Feathers services
+  + folders
+  + files
++ Mongo models
+  + folders
+  + files
+  + users
+    + update profile picture from gravatar
