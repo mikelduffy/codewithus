@@ -5,7 +5,7 @@
   - Login
   - Signup
   - Editor
-- Login component
+- Login component (just use static html)
 - Header component
 - Settings component
 - Current user list component
