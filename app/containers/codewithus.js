@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import app from '../index.js';
 // import Header from './components/header.js';
+// import Header from './userlist.js';
+// import Header from './filenavigation.js';
 import Editor from './editor.js';
 
 class CodeWithUs extends Component {

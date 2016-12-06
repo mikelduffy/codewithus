@@ -8,12 +8,14 @@ This project was created for my Hack Reactor MVP.
 ### MVP ###
 - Multiple users can edit the same file
 - Syntax highlighting
-- Multiple files/folders
-- Multiple users can work on separate files
 
 ### If Time Allows ###
-- Upload your files
+- Multiple files/folders
+- Multiple users can work on separate files
 - Display cursors of users with their name
+
+### Nice to have, but probably not ###
+- Upload your files
 - Code runner
 - Light/Dark theme
 - Logging user edits
