@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import app from '../index.js';
 // import Header from './components/header.js';
-// import UserList from './userlist.js';
 import FileNavigator from './filenavigator.js';
 import Editor from './editor.js';
+import NewFileModal from '../components/newfilemodal.js';
 import {Grid, Row, Col} from 'react-bootstrap';
 
 class CodeWithUs extends Component {
@@ -16,10 +16,13 @@ class CodeWithUs extends Component {
       currentFileContent: '',
       files: [],
       folders: [],
-      users: []
+      users: [],
+      showNewFileModal: false,
+      newFileName: ''
     };
 
     this.userService = app.service('users');
+
     this.fileService = app.service('files');
 
     this.handleContentUpdate = (newContent) => {
@@ -38,8 +41,27 @@ class CodeWithUs extends Component {
       });
     }
 
-    this.handleNewFile = (name) => {
+    this.handleModalClose = () => {
+      this.setState({ showNewFileModal: false });
+    },
 
+    this.handleModalOpen = () => {
+      this.setState({ showNewFileModal: true });
+    },
+
+    this.handleNewFileInput = (e) => {
+      this.setState({ newFileName: e.target.value });
+    }
+
+    this.handleNewFile = () => {
+      this.fileService.create({
+          name: this.state.newFileName,
+          text: ''
+      });
+      this.setState({
+        showNewFileModal: false,
+        newFileName: ''
+      });
     }
   };
 
@@ -82,6 +104,7 @@ class CodeWithUs extends Component {
       <Grid>
         <Col xs={2}>
           <FileNavigator
+            onModalOpen={this.handleModalOpen}
             onNewFile={this.handleNewFile}
             onFileClick={this.handleFileClick}
             files={this.state.files}
@@ -96,6 +119,13 @@ class CodeWithUs extends Component {
             onContentUpdate={this.handleContentUpdate}
             />
         </Col>
+        <NewFileModal
+          newFileName={this.state.newFileName}
+          onNewFileInput={this.handleNewFileInput}
+          onModalClose={this.handleModalClose}
+          onNewFile={this.handleNewFile}
+          showNewFileModal={this.state.showNewFileModal}
+          />
       </Grid>
     )
   }
