@@ -8,6 +8,7 @@ var HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
 });
 
 module.exports = {
+  devtool: "source-map",
   entry: [
     'webpack-hot-middleware/client',
     __dirname + '/app/index.js'

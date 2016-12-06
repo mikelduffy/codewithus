@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import app from '../index.js';
 // import Header from './components/header.js';
-// import Header from './userlist.js';
-// import Header from './filenavigation.js';
+// import UserList from './userlist.js';
+import FileNavigator from './filenavigator.js';
 import Editor from './editor.js';
 
 class CodeWithUs extends Component {
@@ -66,6 +66,11 @@ class CodeWithUs extends Component {
   render(){
     return (
       <div>
+        <FileNavigator
+          files={this.state.files}
+          users={this.state.users}
+          currentFileId={this.state.currentFileId}
+          />
         <Editor
           title={this.state.currentFileTitle}
           content={this.state.currentFileContent}
