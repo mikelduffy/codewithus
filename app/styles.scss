@@ -2,15 +2,6 @@ body {
   margin: 0;
   overflow: hidden;
 }
-// a {
-//   color: #08c;
-//   text-decoration: none;
-// }
-//
-// a:hover {
-//   text-decoration: underline;
-// }
-//
 
 .container {
   margin-left: 0;
@@ -82,7 +73,7 @@ body {
 }
 
 .navbar-header {
-  margin-left: 43% !important;
+  margin-left: 40% !important;
 }
 
 .navbar-brand {
@@ -113,8 +104,4 @@ body {
 .CodeMirror {
   height: 100%;
 }
-// #app {
-//   width: 100%;
-//   height: 100%;
-// }
 @import "../node_modules/codemirror/lib/codemirror.css";

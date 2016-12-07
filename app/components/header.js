@@ -2,11 +2,12 @@ import React, { PropTypes } from 'react'
 import {Navbar, Nav, NavItem} from 'react-bootstrap';
 
 const Header = (props) => (
-  <Navbar>
+  <Navbar collapseOnSelect>
     <Navbar.Header>
       <Navbar.Brand>
         CodeWithUs
       </Navbar.Brand>
+      <Navbar.Toggle />
     </Navbar.Header>
     <Navbar.Collapse>
       <Nav pullRight>
