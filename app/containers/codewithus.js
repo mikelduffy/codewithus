@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import app from '../index.js';
-// import Header from './components/header.js';
+import Header from '../components/header.js';
 import FileNavigator from './filenavigator.js';
 import Editor from './editor.js';
 import NewFileModal from '../components/newfilemodal.js';
@@ -39,19 +39,19 @@ class CodeWithUs extends Component {
         currentFileTitle: file.name,
         currentFileContent: file.text
       });
-    }
+    };
 
     this.handleModalClose = () => {
       this.setState({ showNewFileModal: false });
-    },
+    };
 
     this.handleModalOpen = () => {
       this.setState({ showNewFileModal: true });
-    },
+    };
 
     this.handleNewFileInput = (e) => {
       this.setState({ newFileName: e.target.value });
-    }
+    };
 
     this.handleNewFile = () => {
       this.fileService.create({
@@ -62,7 +62,11 @@ class CodeWithUs extends Component {
         showNewFileModal: false,
         newFileName: ''
       });
-    }
+    };
+
+    this.handleLogout = () => {
+      app.logout().then(() => window.location.href = '/login.html');
+    };
   };
 
   componentDidMount() {
@@ -102,23 +106,32 @@ class CodeWithUs extends Component {
   render(){
     return (
       <Grid>
-        <Col xs={2}>
-          <FileNavigator
-            onModalOpen={this.handleModalOpen}
-            onNewFile={this.handleNewFile}
-            onFileClick={this.handleFileClick}
-            files={this.state.files}
-            users={this.state.users}
-            currentFileId={this.state.currentFileId}
-            />
-        </Col>
-        <Col xs={10}>
-          <Editor
-            title={this.state.currentFileTitle}
-            content={this.state.currentFileContent}
-            onContentUpdate={this.handleContentUpdate}
-            />
-        </Col>
+        <Row>
+          <Col xs={12}>
+            <Header
+              onLogout={this.handleLogout}
+              />
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={2}>
+            <FileNavigator
+              onModalOpen={this.handleModalOpen}
+              onNewFile={this.handleNewFile}
+              onFileClick={this.handleFileClick}
+              files={this.state.files}
+              users={this.state.users}
+              currentFileId={this.state.currentFileId}
+              />
+          </Col>
+          <Col xs={10}>
+            <Editor
+              title={this.state.currentFileTitle}
+              content={this.state.currentFileContent}
+              onContentUpdate={this.handleContentUpdate}
+              />
+          </Col>
+        </Row>
         <NewFileModal
           newFileName={this.state.newFileName}
           onNewFileInput={this.handleNewFileInput}

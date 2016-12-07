@@ -67,8 +67,26 @@ body {
 .col-xs-7,
 .col-xs-8,
 .col-xs-9 {
-  padding-right: 0 !important;
-  padding-left: 0 !important;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.navbar-header {
+  margin-left: 43% !important;
+}
+
+.navbar-brand {
+  font-size: 28px;
 }
 
 .list-group-item:first-child {

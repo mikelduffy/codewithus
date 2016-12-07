@@ -8,18 +8,14 @@ const NewFileModal = (props) => {
         <Modal.Title>Create a new file</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-
-
-      <form>
-        <FormControl
-          type="text"
-          value={props.newFileName}
-          placeholder="Enter a file name"
-          onChange={props.onNewFileInput}
-        />
-      </form>
-
-
+        <form>
+          <FormControl
+            type="text"
+            value={props.newFileName}
+            placeholder="Enter a file name"
+            onChange={props.onNewFileInput}
+          />
+        </form>
       </Modal.Body>
       <Modal.Footer>
         <Button
