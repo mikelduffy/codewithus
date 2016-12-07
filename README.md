@@ -1,5 +1,5 @@
 # CodeWithUs #
-CodeWithUs is a collaborative real-time code editing environment.
+A real-time collaborative code editing environment.
 
 ## Summary ##
 This project was created for my Hack Reactor MVP.

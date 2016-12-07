@@ -2,7 +2,7 @@
 
 ## Front-end ##
 + Login component (just use static html)
-- Header component
++ Header component
 - Current user list component
 + File navigator component
 + Editor component
