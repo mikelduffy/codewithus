@@ -1,31 +1,17 @@
 # CodeWithUs #
-A real-time collaborative code editing environment.
+A real-time collaborative code editing environment. This project was created for my Hack Reactor 2-day MVP sprint.
 
-## Summary ##
-This project was created for my Hack Reactor MVP.
-
-## Features ##
-### MVP ###
+## MVP Features ##
 - Multiple users can edit the same file
 - Syntax highlighting
-
-### If Time Allows ###
-- Multiple files/folders
 - Multiple users can work on separate files
-- Display cursors of users with their name
 
-### Nice to have, but probably not ###
-- Upload your files
-- Code runner
-- Light/Dark theme
-- Logging user edits
-
-## Technologies ##
+## Tech Stack ##
 ### Front-end ###
 - [Feathers.js](http://feathersjs.com/)
 - [Socket.io](http://socket.io/)
 - [React](https://facebook.github.io/react/)
-- [React-Materialize](https://github.com/react-materialize/react-materialize)
+- [React-Bootstrap](https://react-bootstrap.github.io/)
 - [CodeMirror](https://github.com/codemirror/codemirror)
 - [React-CodeMirror](https://github.com/JedWatson/react-codemirror)
 
@@ -36,5 +22,4 @@ This project was created for my Hack Reactor MVP.
 - [mongoose](http://mongoosejs.com/)
 
 ## Getting Started ##
-Install MongoDB globally with ``brew install mongo`` and run it with ``mongod --dbpath ./data --syslog --fork``.
-Clone the app with ``git clone https://github.com/mikelduffy/hrsf50-mvp.git`` then run the application with ``npm install && npm start`` and enjoy!
+Clone the app with ``git clone https://github.com/mikelduffy/codewithus.git``. Install MongoDB globally on a mac with ``brew install mongo`` and run it in the background with ``mongod --dbpath ./data --syslog --fork``. Then run ``npm install && npm start`` and enjoy collaborative code editing!
