@@ -1,12 +1,13 @@
 {
   "host": "codewithus-app.feathersjs.com",
   "port": 80,
-  "mongodb": "DATABASE_URLssss",
-  "public": "../public/dist/",
+  "mongodb": "DATABASE_URL",
+  "public": "../app",
   "auth": {
     "token": {
       "secret": "FEATHERS_AUTH_SECRET"
     },
     "local": {},
+    "successRedirect": "/"
   }
 }
